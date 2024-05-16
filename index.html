@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e3f4e8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 900px;
+            height: 500px;
+            display: flex;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .left-side {
+            flex: 1;
+            background-color: #bbe5e4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left-side img {
+            width: 300px;
+            height: auto;
+        }
+        .right-side {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right-side h1 {
+            margin: 0 0 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #90ee90;
+        }
+        .sign-up-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #6ab04c;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .sign-up-button:hover {
+            background-color: #59943c;
+        }
+        .or-separator {
+            text-align: center;
+            margin: 20px 0;
+            color: #aaa;
+        }
+        .social-login {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-login img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+        .login-link a {
+            color: #6ab04c;
+            text-decoration: none;
+        }
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <img src="image.png" alt="Illustration">
+        </div>
+        <div class="right-side">
+            <h1>Create Account</h1>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter Full Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Enter Your Password">
+                </div>
+                <button type="submit" class="sign-up-button">Sign-Up</button>
+            </form>
+            <div class="or-separator">- OR -</div>
+            <div class="social-login">
+                <img src="google.png" alt="Google">
+                <img src="facebook.png" alt="Facebook">
+                <img src="apple.png" alt="Apple">
+            </div>
+            <div class="login-link">
+                Already have an account? <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
